@@ -101,7 +101,7 @@ for p in allCombs:
 #this is the macro string, it defines the H-bond visualisation by POV-ray.
 #change dashlength to change the sizes of dashes
 #change lineradius to change the thickness of H-bonds
-#change pigment to change the color
+#change pigment to change the color of H-bond
 HbondMacroString='\n#macro dashedLineL(_point1,_point2)\n  #declare dashLength = 0.05;\n  #declare lineRadius = 0.03;\n\n  #declare currentDashEnd = _point1;\n  #declare currentDashStart = <0,0,0>;\n  #declare lineDirection = vnormalize(_point2 - _point1);\n  #while (vlength(currentDashEnd - _point1) < vlength(_point2 - _point1))\n    #declare currentDashStart = currentDashEnd + (lineDirection * dashLength);\n    #declare currentDashEnd = currentDashEnd + (lineDirection * (dashLength*2));\n    cylinder{currentDashStart, currentDashEnd, lineRadius\n      pigment { rgb <0.6,0.6,0.6> }\n      finish { ambient 0.7 }\n    }\n  #end\n#end\n'
 #
 #need a merge statement in the end
