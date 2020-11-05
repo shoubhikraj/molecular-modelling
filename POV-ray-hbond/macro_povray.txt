@@ -1,0 +1,16 @@
+#macro dashedLineL(_point1,_point2)
+  #declare dashLength = 0.05;
+  #declare lineRadius = 0.03;
+
+  #declare currentDashEnd = _point1;
+  #declare currentDashStart = <0,0,0>;
+  #declare lineDirection = vnormalize(_point2 - _point1);
+  #while (vlength(currentDashEnd - _point1) < vlength(_point2 - _point1))
+    #declare currentDashStart = currentDashEnd + (lineDirection * dashLength);
+    #declare currentDashEnd = currentDashEnd + (lineDirection * (dashLength*2));
+    cylinder{currentDashStart, currentDashEnd, lineRadius
+      pigment { rgb <0.4,0.6,0.6> }
+      finish { ambient 0.7 }
+    }
+  #end
+#end
