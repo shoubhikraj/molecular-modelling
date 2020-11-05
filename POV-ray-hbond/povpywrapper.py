@@ -1,4 +1,5 @@
 #POVray wrapper script to include H-bonds for Avogadro (only)
+#tested with Python 3.7.1 and Avogadro 1.2.0
 import sys
 import os
 import math
