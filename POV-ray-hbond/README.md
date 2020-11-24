@@ -1,4 +1,4 @@
-#POV-ray-hbond
+# POV-ray-hbond
 
 The python script adds hydrogen bonds to a .pov file. Intended to be used directly from Avoagadro. Tested only with Avogadro 1.2.0 and Python 3.7. However, it can be used directly from command line, without needing Avogadro.
 
