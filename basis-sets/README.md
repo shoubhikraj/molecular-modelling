@@ -14,27 +14,30 @@ All basis set data I extracted from the psi4 code (https://github.com/psi4/psi4/
 
 ### Dunning type basis sets: (n=D,T,Q,5,6)
 
-cc-PVnZ (original)- ccnor
-cc-PV(n+1)Z (newer) - ccnp   (p for +)
-cc-PCVnZ - cccn
-cc-PwCVnZ - ccwn
-cc-PVnZ-DK (relativistic) - ccndk
-cc-PVnZ-F12 - ccnf12
-
-Basically, the name is made by cc + c/w (c for PCVnZ, w for PwCVnZ)+ D/T/Q/5/6 + p (if n+1) + DK/F12
+cc-PVnZ (original)- ccnor  
+cc-PV(n+1)Z (newer) - ccnp   (p for +)  
+cc-PCVnZ - cccn  
+cc-PwCVnZ - ccwn  
+cc-PVnZ-DK (relativistic) - ccndk  
+cc-PVnZ-F12 - ccnf12  
 
 etc.
 
-aug-cc-PVnZ (original) - augn
-aug-cc-PV(n+1)Z - augnp
-jun-cc-PV(n+1)Z - junnp
+Basically, the name is made by cc + c/w (c for PCVnZ, w for PwCVnZ)+ D/T/Q/5/6 + p (if n+1) + DK/F12
 
-etc
+
+aug-cc-PVnZ (original) - augn  
+aug-cc-PV(n+1)Z - augnp  
+jun-cc-PV(n+1)Z - junnp  
+
+etc.
 
 The name is made by aug/jun/mar/feb + c/w + D/T/Q/5/6 + p + DK/F12
 
-d-aug-PVnZ - daugn
-heavy-aug-PVnZ -haugn
+d-aug-PVnZ - daugn  
+heavy-aug-PVnZ -haugn  
+
+etc.
 
 The name is made by h/d (h for heavy, d for d) + aug + D/T/Q/5/6 + p + DK/F12
 
@@ -44,12 +47,12 @@ For Dunning basis sets, use spherical coordinates (ISPHER=1)
 
 ### Ahlrichs type basis sets:
 
-def2-SVP - d2svp
-def2-SVPD - d2svpd
-def2-TZVP - d2tzvp
-def2-TZVPD - d2tzvpd
-def2-TZVPP - d2tzvpp
-def2-TZVPPD - d2tzvppd
+def2-SVP - d2svp  
+def2-SVPD - d2svpd  
+def2-TZVP - d2tzvp  
+def2-TZVPD - d2tzvpd  
+def2-TZVPP - d2tzvpp  
+def2-TZVPPD - d2tzvppd  
 
 (If ECP is required, it has to be supplied manually)
 
@@ -63,20 +66,20 @@ Use spherical coordinates.
 
 ### Other basis sets:
 
-psi3-dzp - p3dzp
-psi3-tz2p - p3tz2p
-psi3-tz2pf - p3tz2pf
+psi3-dzp - p3dzp  
+psi3-tz2p - p3tz2p  
+psi3-tz2pf - p3tz2pf  
 
 Use cartesian coordinates with these.
 
-2zapa-nr - 2zapanr
-3zapa-nr - 3zapanr
-...
+2zapa-nr - 2zapanr  
+3zapa-nr - 3zapanr  
+...  
 6zapa-nr - 6zapanr
 
 Use spherical coordinates with these.
 
-ANO0 - ano0
+ANO0 - ano0  
 
 ## RI-fitting basis sets
 
