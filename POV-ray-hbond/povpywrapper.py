@@ -97,7 +97,7 @@ for p in allCombs:
     distance=calc_dist(atomList[p[0]][0],atomList[p[1]][0])
     if (distance<=2.0)&(distance>0.6):
         addString.append('\ndashedLineL(<'+str(atomList[p[0]][0])[1:-1]+'> , <'+str(atomList[p[1]][0])[1:-1]+'>)')
-        HbondListString=''.join(addString)
+    HbondListString=''.join(addString)
 #
 #this is the macro string, it defines the H-bond visualisation by POV-ray.
 #change dashlength to change the sizes of dashes
