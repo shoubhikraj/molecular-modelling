@@ -7,8 +7,8 @@ The command line options and instructions for running are in the script (open wi
 
 To run the script on Windows—
 
-From Powershell: .\compile.ps1 <options>
+From Powershell: `.\compile.ps1 <options>`
 
-From command prompt: powershell .\compile.ps1 <options>
+From command prompt: `powershell .\compile.ps1 <options>`
   
-If execution is disallowed by policy, then try from command prompt: powershell -ExecutionPolicy bypass .\compile.ps1 <options>
+If execution is disallowed by policy, then try from command prompt: `powershell -ExecutionPolicy bypass .\compile.ps1 <options>`
