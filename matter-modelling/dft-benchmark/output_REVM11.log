@@ -1,0 +1,1061 @@
+-------------------------------------------------------------------------
+
+  .g8"""bgd       db      `7MMM.     ,MMF'`7MM"""YMM   .M"""bgd  .M"""bgd
+.dP'     `M      ;MM:       MMMb    dPMM    MM    `7  ,MI    "Y ,MI    "Y
+dM'       `     ,V^MML      M YM   ,M MM    MM   d    `MMb.     `MMb.
+MM             ,M  `MM      M  Mb  M' MM    MMmmMM      `YMMNq.   `YMMNq.
+MM.    `7MMF'  A     MA     M  YM.P'  MM    MM   Y  , .     `MM .     `MM
+`Mb.     MM   A'     VML    M  `YM'   MM    MM     ,M Mb     dM Mb     dM
+  `"bmmm!GO .YAN.   .KEES!.JML. `'  .JMML..JMMmmmmMMM P"Ybmmd"  P"Ybmmd"
+
+-------------------------------------------------------------------------
+
+                       GAMESS for Microsoft Windows
+                    http://www.msg.ameslab.gov/gamess
+
+GAMESS References:
+
+"General Atomic and Molecular Electronic Structure System"
+M.W.Schmidt, K.K.Baldridge, J.A.Boatz, S.T.Elbert, M.S.Gordon,
+J.H.Jensen, S.Koseki, N.Matsunaga, K.A.Nguyen, S.Su, T.L.Windus, M.Dupuis,
+J.A.Montgomery J. Comput. Chem., 14, 1347-1363(1993).
+
+"Advances in electronic structure theory: GAMESS a decade later"
+M.S.Gordon, M.W.Schmidt pp. 1167-1189, in
+"Theory and Applications of Computational Chemistry: the first forty years"
+C.E.Dykstra, G.Frenking, K.S.Kim, G.E.Scuseria (editors),
+Elsevier, Amsterdam, 2005.
+=========================================================================
+
+Contents of rungms.gms file:
+
+GAMESSDIR=C:\Users\Public\gamess-64
+AUXDATADIR=C:\Users\Public\gamess-64\auxdata
+RESTARTDIR=C:\Users\Public\gamess-64\restart
+SCRATCHDIR=C:\Users\Public\gamess-64\scratch
+
+=========================================================================
+
+Job Properties
+
+Input Filename               : input_REVM11.inp
+GAMESS Version               : gamess.00.exe
+Compute Processes Requested  : 1
+Nodes Required               : 1
+
+=========================================================================
+
+------------------------ GAMESS EXECUTION SCRIPT ------------------------
+This job is running on host LAPTOP-V556K7BI under operating system
+Microsoft Windows [Version 10.0.19041.746] at 26-05-2021 - 10:19:15.66
+Available scratch disk at beginning of the job is 148,369,387,520 bytes
+
+EXTBAS=C:\Users\Public\gamess-64\auxdata\EXTBASIS.txt
+NUCBAS=/dev/null
+EXTCAB=C:\Users\Public\gamess-64\auxdata\RIBASIS.txt
+POSBAS=/dev/null
+DFTBPAR=C:\Users\Public\gamess-64\auxdata\DFTB
+ERICFMT=C:\Users\Public\gamess-64\auxdata\ericfmt.dat
+MCPPATH=C:\Users\Public\gamess-64\auxdata\MCP
+BASPATH=C:\Users\Public\gamess-64\auxdata\BASES
+QUANPOL=C:\Users\Public\gamess-64\auxdata\QUANPOL
+MAKEFP=C:\Users\Public\gamess-64\restart\input_REVM11.efp
+GAMMA=C:\Users\Public\gamess-64\restart\input_REVM11.gamma
+TRAJECT=C:\Users\Public\gamess-64\restart\input_REVM11.trj
+RESTART=C:\Users\Public\gamess-64\restart\input_REVM11.rst
+QMWAVE=C:\Users\Public\gamess-64\restart\input_REVM11.qmw
+MDDIP=C:\Users\Public\gamess-64\restart\input_REVM11.dip
+OPTHES1=C:\Users\Public\gamess-64\restart\input_REVM11.hs1
+OPTHES2=C:\Users\Public\gamess-64\restart\input_REVM11.hs2
+XYZ=C:\Users\Public\gamess-64\scratch\input_REVM11.xyz
+INPUT=C:\Users\Public\gamess-64\scratch\input_REVM11.F05
+PUNCH=C:\Users\Public\gamess-64\restart\input_REVM11.dat
+AOINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F08
+MOINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F09
+DICTNRY=C:\Users\Public\gamess-64\scratch\input_REVM11.F10
+DRTFILE=C:\Users\Public\gamess-64\scratch\input_REVM11.F11
+CIVECTR=C:\Users\Public\gamess-64\scratch\input_REVM11.F12
+CASINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F13
+CIINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F14
+WORK15=C:\Users\Public\gamess-64\scratch\input_REVM11.F15
+WORK16=C:\Users\Public\gamess-64\scratch\input_REVM11.F16
+CSFSAVE=C:\Users\Public\gamess-64\scratch\input_REVM11.F17
+FOCKDER=C:\Users\Public\gamess-64\scratch\input_REVM11.F18
+WORK19=C:\Users\Public\gamess-64\scratch\input_REVM11.F19
+DASORT=C:\Users\Public\gamess-64\scratch\input_REVM11.F20
+DIABDAT=C:\Users\Public\gamess-64\scratch\input_REVM11.F21
+DFTINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F21
+DFTGRID=C:\Users\Public\gamess-64\scratch\input_REVM11.F22
+JKFILE=C:\Users\Public\gamess-64\scratch\input_REVM11.F23
+ORDINT=C:\Users\Public\gamess-64\scratch\input_REVM11.F24
+EFPIND=C:\Users\Public\gamess-64\scratch\input_REVM11.F25
+PCMDATA=C:\Users\Public\gamess-64\scratch\input_REVM11.F26
+PCMINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F27
+SVPWRK1=C:\Users\Public\gamess-64\scratch\input_REVM11.F26
+SVPWRK2=C:\Users\Public\gamess-64\scratch\input_REVM11.F27
+COSCAV=C:\Users\Public\gamess-64\scratch\input_REVM11.F26
+COSDATA=C:\Users\Public\gamess-64\restart\input_REVM11.cosmo
+COSPOT=C:\Users\Public\gamess-64\restart\input_REVM11.pot
+MLTPL=C:\Users\Public\gamess-64\scratch\input_REVM11.F28
+MLTPLT=C:\Users\Public\gamess-64\scratch\input_REVM11.F29
+DAFL30=C:\Users\Public\gamess-64\scratch\input_REVM11.F30
+SOINTX=C:\Users\Public\gamess-64\scratch\input_REVM11.F31
+SOINTY=C:\Users\Public\gamess-64\scratch\input_REVM11.F32
+SOINTZ=C:\Users\Public\gamess-64\scratch\input_REVM11.F33
+SORESC=C:\Users\Public\gamess-64\scratch\input_REVM11.F34
+GCILIST=C:\Users\Public\gamess-64\scratch\input_REVM11.F37
+HESSIAN=C:\Users\Public\gamess-64\scratch\input_REVM11.F38
+QMMMTEI=C:\Users\Public\gamess-64\scratch\input_REVM11.F39
+SOCCDAT=C:\Users\Public\gamess-64\scratch\input_REVM11.F40
+AABB41=C:\Users\Public\gamess-64\scratch\input_REVM11.F41
+BBAA42=C:\Users\Public\gamess-64\scratch\input_REVM11.F42
+BBBB43=C:\Users\Public\gamess-64\scratch\input_REVM11.F43
+REMD=C:\Users\Public\gamess-64\scratch\input_REVM11.F44
+UNV=C:\Users\Public\gamess-64\scratch\input_REVM11.F45
+UNPV=C:\Users\Public\gamess-64\scratch\input_REVM11.F46
+MCQD50=C:\Users\Public\gamess-64\scratch\input_REVM11.F50
+MCQD51=C:\Users\Public\gamess-64\scratch\input_REVM11.F51
+MCQD52=C:\Users\Public\gamess-64\scratch\input_REVM11.F52
+MCQD53=C:\Users\Public\gamess-64\scratch\input_REVM11.F53
+MCQD54=C:\Users\Public\gamess-64\scratch\input_REVM11.F54
+MCQD55=C:\Users\Public\gamess-64\scratch\input_REVM11.F55
+MCQD56=C:\Users\Public\gamess-64\scratch\input_REVM11.F56
+MCQD57=C:\Users\Public\gamess-64\scratch\input_REVM11.F57
+MCQD58=C:\Users\Public\gamess-64\scratch\input_REVM11.F58
+MCQD59=C:\Users\Public\gamess-64\scratch\input_REVM11.F59
+MCQD60=C:\Users\Public\gamess-64\scratch\input_REVM11.F60
+MCQD61=C:\Users\Public\gamess-64\scratch\input_REVM11.F61
+MCQD62=C:\Users\Public\gamess-64\scratch\input_REVM11.F62
+MCQD63=C:\Users\Public\gamess-64\scratch\input_REVM11.F63
+MCQD64=C:\Users\Public\gamess-64\scratch\input_REVM11.F64
+NMRINT1=C:\Users\Public\gamess-64\scratch\input_REVM11.F61
+NMRINT2=C:\Users\Public\gamess-64\scratch\input_REVM11.F62
+NMRINT3=C:\Users\Public\gamess-64\scratch\input_REVM11.F63
+NMRINT4=C:\Users\Public\gamess-64\scratch\input_REVM11.F64
+NMRINT5=C:\Users\Public\gamess-64\scratch\input_REVM11.F65
+NMRINT6=C:\Users\Public\gamess-64\scratch\input_REVM11.F66
+DCPHFH2=C:\Users\Public\gamess-64\scratch\input_REVM11.F67
+DCPHF21=C:\Users\Public\gamess-64\scratch\input_REVM11.F68
+ELNUINT=C:\Users\Public\gamess-64\scratch\input_REVM11.F67
+NUNUINT=C:\Users\Public\gamess-64\scratch\input_REVM11.F68
+GVVPT=C:\Users\Public\gamess-64\scratch\input_REVM11.F69
+NUMOCAS=C:\Users\Public\gamess-64\scratch\input_REVM11.F70
+NUELCAS=C:\Users\Public\gamess-64\scratch\input_REVM11.F72
+RIVMAT=C:\Users\Public\gamess-64\scratch\input_REVM11.F51
+RIT2A=C:\Users\Public\gamess-64\scratch\input_REVM11.F52
+RIT3A=C:\Users\Public\gamess-64\scratch\input_REVM11.F53
+RIT2B=C:\Users\Public\gamess-64\scratch\input_REVM11.F54
+RIT3B=C:\Users\Public\gamess-64\scratch\input_REVM11.F55
+DEN2P1=C:\Users\Public\gamess-64\scratch\input_REVM11.F70
+DEN2P2=C:\Users\Public\gamess-64\scratch\input_REVM11.F71
+DEN2P3=C:\Users\Public\gamess-64\scratch\input_REVM11.F72
+DEN2P4=C:\Users\Public\gamess-64\scratch\input_REVM11.F73
+DEN2NM=C:\Users\Public\gamess-64\scratch\input_REVM11.F74
+DEN2OPT=C:\Users\Public\gamess-64\scratch\input_REVM11.F75
+GMCREF=C:\Users\Public\gamess-64\scratch\input_REVM11.F70
+GMCO2R=C:\Users\Public\gamess-64\scratch\input_REVM11.F71
+GMCROC=C:\Users\Public\gamess-64\scratch\input_REVM11.F72
+GMCOOC=C:\Users\Public\gamess-64\scratch\input_REVM11.F73
+GMCCC0=C:\Users\Public\gamess-64\scratch\input_REVM11.F74
+GMCHMA=C:\Users\Public\gamess-64\scratch\input_REVM11.F75
+GMCEI1=C:\Users\Public\gamess-64\scratch\input_REVM11.F76
+GMCEI2=C:\Users\Public\gamess-64\scratch\input_REVM11.F77
+GMCEOB=C:\Users\Public\gamess-64\scratch\input_REVM11.F78
+GMCEDT=C:\Users\Public\gamess-64\scratch\input_REVM11.F79
+GMCERF=C:\Users\Public\gamess-64\scratch\input_REVM11.F80
+GMCHCR=C:\Users\Public\gamess-64\scratch\input_REVM11.F81
+GMCGJK=C:\Users\Public\gamess-64\scratch\input_REVM11.F82
+GMCGAI=C:\Users\Public\gamess-64\scratch\input_REVM11.F83
+GMCGEO=C:\Users\Public\gamess-64\scratch\input_REVM11.F84
+GMCTE1=C:\Users\Public\gamess-64\scratch\input_REVM11.F85
+GMCTE2=C:\Users\Public\gamess-64\scratch\input_REVM11.F86
+GMCHEF=C:\Users\Public\gamess-64\scratch\input_REVM11.F87
+GMCMOL=C:\Users\Public\gamess-64\scratch\input_REVM11.F88
+GMCMOS=C:\Users\Public\gamess-64\scratch\input_REVM11.F89
+GMCWGT=C:\Users\Public\gamess-64\scratch\input_REVM11.F90
+GMCRM2=C:\Users\Public\gamess-64\scratch\input_REVM11.F91
+GMCRM1=C:\Users\Public\gamess-64\scratch\input_REVM11.F92
+GMCR00=C:\Users\Public\gamess-64\scratch\input_REVM11.F93
+GMCRP1=C:\Users\Public\gamess-64\scratch\input_REVM11.F94
+GMCRP2=C:\Users\Public\gamess-64\scratch\input_REVM11.F95
+GMCVEF=C:\Users\Public\gamess-64\scratch\input_REVM11.F96
+GMCDIN=C:\Users\Public\gamess-64\scratch\input_REVM11.F97
+GMC2SZ=C:\Users\Public\gamess-64\scratch\input_REVM11.F98
+GMCCCS=C:\Users\Public\gamess-64\scratch\input_REVM11.F99
+CCREST=C:\Users\Public\gamess-64\scratch\input_REVM11.F70
+CCDIIS=C:\Users\Public\gamess-64\scratch\input_REVM11.F71
+CCINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F72
+CCT1AMP=C:\Users\Public\gamess-64\scratch\input_REVM11.F73
+CCT2AMP=C:\Users\Public\gamess-64\scratch\input_REVM11.F74
+CCT3AMP=C:\Users\Public\gamess-64\scratch\input_REVM11.F75
+CCVM=C:\Users\Public\gamess-64\scratch\input_REVM11.F76
+CCVE=C:\Users\Public\gamess-64\scratch\input_REVM11.F77
+CCQUADS=C:\Users\Public\gamess-64\scratch\input_REVM11.F78
+QUADSVO=C:\Users\Public\gamess-64\scratch\input_REVM11.F79
+EOMSTAR=C:\Users\Public\gamess-64\scratch\input_REVM11.F80
+EOMVEC1=C:\Users\Public\gamess-64\scratch\input_REVM11.F81
+EOMVEC2=C:\Users\Public\gamess-64\scratch\input_REVM11.F82
+EOMHC1=C:\Users\Public\gamess-64\scratch\input_REVM11.F83
+EOMHC2=C:\Users\Public\gamess-64\scratch\input_REVM11.F84
+EOMHHHH=C:\Users\Public\gamess-64\scratch\input_REVM11.F85
+EOMPPPP=C:\Users\Public\gamess-64\scratch\input_REVM11.F86
+EOMRAMP=C:\Users\Public\gamess-64\scratch\input_REVM11.F87
+EOMRTMP=C:\Users\Public\gamess-64\scratch\input_REVM11.F88
+EOMDG12=C:\Users\Public\gamess-64\scratch\input_REVM11.F89
+MMPP=C:\Users\Public\gamess-64\scratch\input_REVM11.F90
+MMHPP=C:\Users\Public\gamess-64\scratch\input_REVM11.F91
+MMCIVEC=C:\Users\Public\gamess-64\scratch\input_REVM11.F92
+MMCIVC1=C:\Users\Public\gamess-64\scratch\input_REVM11.F93
+MMCIITR=C:\Users\Public\gamess-64\scratch\input_REVM11.F94
+EOMVL1=C:\Users\Public\gamess-64\scratch\input_REVM11.F95
+EOMVL2=C:\Users\Public\gamess-64\scratch\input_REVM11.F96
+EOMLVEC=C:\Users\Public\gamess-64\scratch\input_REVM11.F97
+EOMHL1=C:\Users\Public\gamess-64\scratch\input_REVM11.F98
+EOMHL2=C:\Users\Public\gamess-64\scratch\input_REVM11.F99
+CCVVVV=C:\Users\Public\gamess-64\scratch\input_REVM11.F80
+AMPROCC=C:\Users\Public\gamess-64\scratch\input_REVM11.F70
+ITOPNCC=C:\Users\Public\gamess-64\scratch\input_REVM11.F71
+FOCKMTX=C:\Users\Public\gamess-64\scratch\input_REVM11.F72
+LAMB23=C:\Users\Public\gamess-64\scratch\input_REVM11.F73
+VHHAA=C:\Users\Public\gamess-64\scratch\input_REVM11.F74
+VHHBB=C:\Users\Public\gamess-64\scratch\input_REVM11.F75
+VHHAB=C:\Users\Public\gamess-64\scratch\input_REVM11.F76
+VMAA=C:\Users\Public\gamess-64\scratch\input_REVM11.F77
+VMBB=C:\Users\Public\gamess-64\scratch\input_REVM11.F78
+VMAB=C:\Users\Public\gamess-64\scratch\input_REVM11.F79
+VMBA=C:\Users\Public\gamess-64\scratch\input_REVM11.F80
+VHPRAA=C:\Users\Public\gamess-64\scratch\input_REVM11.F81
+VHPRBB=C:\Users\Public\gamess-64\scratch\input_REVM11.F82
+VHPRAB=C:\Users\Public\gamess-64\scratch\input_REVM11.F83
+VHPLAA=C:\Users\Public\gamess-64\scratch\input_REVM11.F84
+VHPLBB=C:\Users\Public\gamess-64\scratch\input_REVM11.F85
+VHPLAB=C:\Users\Public\gamess-64\scratch\input_REVM11.F86
+VHPLBA=C:\Users\Public\gamess-64\scratch\input_REVM11.F87
+VEAA=C:\Users\Public\gamess-64\scratch\input_REVM11.F88
+VEBB=C:\Users\Public\gamess-64\scratch\input_REVM11.F89
+VEAB=C:\Users\Public\gamess-64\scratch\input_REVM11.F90
+VEBA=C:\Users\Public\gamess-64\scratch\input_REVM11.F91
+VPPPP=C:\Users\Public\gamess-64\scratch\input_REVM11.F92
+INTERM1=C:\Users\Public\gamess-64\scratch\input_REVM11.F93
+INTERM2=C:\Users\Public\gamess-64\scratch\input_REVM11.F94
+INTERM3=C:\Users\Public\gamess-64\scratch\input_REVM11.F95
+ITSPACE=C:\Users\Public\gamess-64\scratch\input_REVM11.F96
+INSTART=C:\Users\Public\gamess-64\scratch\input_REVM11.F97
+ITSPC3=C:\Users\Public\gamess-64\scratch\input_REVM11.F98
+AOINTS=C:\Users\Public\gamess-64\scratch\input_REVM11.F08
+OLI201=C:\Users\Public\gamess-64\scratch\input_REVM11.F201
+OLI202=C:\Users\Public\gamess-64\scratch\input_REVM11.F202
+OLI203=C:\Users\Public\gamess-64\scratch\input_REVM11.F203
+OLI204=C:\Users\Public\gamess-64\scratch\input_REVM11.F204
+OLI205=C:\Users\Public\gamess-64\scratch\input_REVM11.F205
+OLI206=C:\Users\Public\gamess-64\scratch\input_REVM11.F206
+OLI207=C:\Users\Public\gamess-64\scratch\input_REVM11.F207
+OLI208=C:\Users\Public\gamess-64\scratch\input_REVM11.F208
+OLI209=C:\Users\Public\gamess-64\scratch\input_REVM11.F209
+OLI210=C:\Users\Public\gamess-64\scratch\input_REVM11.F210
+OLI211=C:\Users\Public\gamess-64\scratch\input_REVM11.F211
+OLI212=C:\Users\Public\gamess-64\scratch\input_REVM11.F212
+OLI213=C:\Users\Public\gamess-64\scratch\input_REVM11.F213
+OLI214=C:\Users\Public\gamess-64\scratch\input_REVM11.F214
+OLI215=C:\Users\Public\gamess-64\scratch\input_REVM11.F215
+OLI216=C:\Users\Public\gamess-64\scratch\input_REVM11.F216
+OLI217=C:\Users\Public\gamess-64\scratch\input_REVM11.F217
+OLI218=C:\Users\Public\gamess-64\scratch\input_REVM11.F218
+OLI219=C:\Users\Public\gamess-64\scratch\input_REVM11.F219
+OLI220=C:\Users\Public\gamess-64\scratch\input_REVM11.F220
+OLI221=C:\Users\Public\gamess-64\scratch\input_REVM11.F221
+OLI222=C:\Users\Public\gamess-64\scratch\input_REVM11.F222
+OLI223=C:\Users\Public\gamess-64\scratch\input_REVM11.F223
+OLI224=C:\Users\Public\gamess-64\scratch\input_REVM11.F224
+OLI225=C:\Users\Public\gamess-64\scratch\input_REVM11.F225
+OLI226=C:\Users\Public\gamess-64\scratch\input_REVM11.F226
+OLI227=C:\Users\Public\gamess-64\scratch\input_REVM11.F227
+OLI228=C:\Users\Public\gamess-64\scratch\input_REVM11.F228
+OLI229=C:\Users\Public\gamess-64\scratch\input_REVM11.F229
+OLI230=C:\Users\Public\gamess-64\scratch\input_REVM11.F230
+OLI231=C:\Users\Public\gamess-64\scratch\input_REVM11.F231
+OLI232=C:\Users\Public\gamess-64\scratch\input_REVM11.F232
+OLI233=C:\Users\Public\gamess-64\scratch\input_REVM11.F233
+OLI234=C:\Users\Public\gamess-64\scratch\input_REVM11.F234
+OLI235=C:\Users\Public\gamess-64\scratch\input_REVM11.F235
+OLI236=C:\Users\Public\gamess-64\scratch\input_REVM11.F236
+OLI237=C:\Users\Public\gamess-64\scratch\input_REVM11.F237
+OLI238=C:\Users\Public\gamess-64\scratch\input_REVM11.F238
+OLI239=C:\Users\Public\gamess-64\scratch\input_REVM11.F239
+DCSUB=C:\Users\Public\gamess-64\scratch\input_REVM11.F250
+DCVEC=C:\Users\Public\gamess-64\scratch\input_REVM11.F251
+DCEIG=C:\Users\Public\gamess-64\scratch\input_REVM11.F252
+DCDM=C:\Users\Public\gamess-64\scratch\input_REVM11.F253
+DCDMO=C:\Users\Public\gamess-64\scratch\input_REVM11.F254
+DCQ=C:\Users\Public\gamess-64\scratch\input_REVM11.F255
+DCW=C:\Users\Public\gamess-64\scratch\input_REVM11.F256
+DCEDM=C:\Users\Public\gamess-64\scratch\input_REVM11.F257
+LHYPWRK=C:\Users\Public\gamess-64\scratch\input_REVM11.F297
+LHYPWK2=C:\Users\Public\gamess-64\scratch\input_REVM11.F298
+BONDDPF=C:\Users\Public\gamess-64\scratch\input_REVM11.F299
+VB2000PATH=C:\Users\Public\gamess-64\vb2000
+GMSJOBNAME=input_REVM11
+CIMFILE=C:\Users\Public\gamess-64\restart\input_REVM11.cim
+CIMDMN=C:\Users\Public\gamess-64\restart\input_REVM11.dmn
+CIMDCT=C:\Users\Public\gamess-64\scratch\input_REVM11.Fcdt
+CIMAOI=C:\Users\Public\gamess-64\scratch\input_REVM11.Fcao
+CIMMOI=C:\Users\Public\gamess-64\scratch\input_REVM11.Fcmo
+CASINO=C:\Users\Public\gamess-64\restart\input_REVM11.casino
+
+=========================================================================
+
+Searching for restart files from a previous input_REVM11 run.
+
+None found.
+
+=========================================================================
+Microsoft MPI (MS-MPI) will be running GAMESS on 1 node(s).
+The binary will be kicked off by 'mpiexec' is gamess.00.exe
+MS-MPI will run 1 compute process(es) and 1 data server(s).
+
+          *******************************************************
+          *                                                     *
+          *          GAMESS VERSION = 30 SEP 2020 (R2)          *
+          *                                                     *
+          *              doi.org/10.1063/5.0005188              *
+          *                                                     *
+          ************ 64 BIT WINDOWS INTEL VERSION *************
+
+  GAMESS HAS BEEN MADE POSSIBLE WITH IMPORTANT CONTRIBUTIONS FROM
+  THE FOLLOWING INDIVIDUALS (IN ALPHABETICAL ORDER):
+
+     IVANA ADAMOVIC, CHRISTINE AIKENS, TOMOKO AKAMA,
+     YURI ALEXEEV, YURIKO AOKI, POOJA ARORA, TOSHIO ASADA,
+     ANDREY ASADCHEV, KIM K. BALDRIDGE, PRADIPTA BANDYOPADHYAY,
+     MARIA BARYSZ, ROB BELL, JONATHAN BENTZ, COLLEEN BERTONI,
+     JERRY A. BOATZ, BRETT BODE, KURT BRORSEN, KURT R. BRORSEN,
+     LAIMUTIS BYTAUTAS, CALEB CARLIN, LAURA CARRINGTON,
+     GALINA CHABAN, BENOIT CHAMPAGNE, WEI CHEN, MAHITO CHIBA,
+     DAN CHIPMAN, CHEOL HO CHOI, TANNER CULPITT,
+     DIPAYAN DATTA, PAUL DAY, ALBERT DEFUSCO,
+     NUWAN DESILVA, J. EMILIANO DEUSTUA,
+     TIM DUDLEY, MICHEL DUPUIS, STEVEN T. ELBERT,
+     DMITRI FEDOROV, ALEX FINDLATER, GRAHAM FLETCHER,
+     MARK FREITAG, CHRISTIAN FRIEDL, DAVID GARMER,
+     IGOR S. GERASIMOV, KURT GLAESEMANN, MARK S. GORDON,
+     JEFFREY GOUR, FENG LONG GU, EMILIE B. GUIDEZ,
+     ANASTASIA GUNINA, SHARON HAMMES-SCHIFFER, MASATAKE HARUTA,
+     KIMIHIKO HIRAO, YASUHIRO IKABATA, TZVETELIN IORDANOV,
+     STEPHAN IRLE, KAZUYA ISHIMURA, JOE IVANIC, FRANK JENSEN,
+     JAN H. JENSEN, VISVALDAS KAIRYS, MUNEAKI KAMIYA,
+     MICHIO KATOUDA, NAOAKI KAWAKAMI, DAN KEMP, BERNARD KIRTMAN,
+     KAZUO KITAURA, MARIUSZ KLOBUKOWSKI, MASATO KOBAYASHI,
+     PRAKASHAN KORAMBATH, JACEK KORCHOWIEC, SHIRO KOSEKI,
+     KAROL KOWALSKI, JIMMY KROMANN, STANISLAW KUCHARSKI,
+     HENRY KURTZ, SAROM SOK LEANG, HUI LI, SHUHUA LI, WEI LI,
+     JESSE LUTZ, ALEKSANDR O. LYKHIN, MARCIN MAKOWSKI,
+     JOANI MATO, NIKITA MATSUNAGA, BENEDETTA MENNUCCI,
+     GRANT MERRILL, NORIYUKI MINEZAWA, VLADIMIR MIRONOV,
+     EISAKU MIYOSHI, JOHN A. MONTGOMERY JR., HIROTOSHI MORI,
+     JONATHAN MULLIN, MONIKA MUSIAL, SHIGERU NAGASE,
+     TAKESHI NAGATA, HIROMI NAKAI, TAKAHITO NAKAJIMA,
+     YUYA NAKAJIMA, HARUYUKI NAKANO, HIROYA NAKATA, SEAN NEDD,
+     HEATHER NETZLOFF, KIET A. NGUYEN, YOSHIO NISHIMOTO,
+     BOSILJKA NJEGIC, RYAN OLSON, MIKE PAK, ROBERTO PEVERATI,
+     BUU PHAM, PIOTR PIECUCH, ANNA POMOGAEVA, DAVID POOLE,
+     SPENCER PRUITT, OLIVIER QUINET, LUKE ROSKOP,
+     KLAUS RUEDENBERG, ANDREW SAND, TOSAPORN SATTASATHUCHANA,
+     NOZOMI SAWADA, MICHAEL W. SCHMIDT, PATRICK E. SCHNEIDER,
+     JUNJI SEINO, PRACHI SHARMA, JUN SHEN, JIM SHOEMAKER,
+     YINAN SHU, DEJUN SI, JONATHAN SKONE, LYUDMILA SLIPCHENKO,
+     TONY SMITH, JIE SONG, MARK SPACKMAN, CASPER STEINMANN,
+     WALT STEVENS, PEIFENG SU, SHUJUN SU, CHET SWALINA,
+     TETSUYA TAKETSUGU, ZHEN TAO, NANDUN THELLAMUREGE
+     SEIKEN TOKURA, JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA,
+     HIROAKI UMEDA, JORGE LUIS GALVEZ VALLEJO, YALI WANG,
+     SIMON WEBB, AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
+     PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
+     SOOHAENG YOO, TAKESHI YOSHIKAWA, FEDERICO ZAHARIEV,
+     TOBY ZENG
+
+  WHO ARE SUPPORTED BY THEIR INSTITUTION/UNIVERSITY/COMPANY/GROUP
+  (IN ALPHABETICAL ORDER):
+
+     EP ANALYTICS, FACULTES UNIVERSITAIRES NOTRE-DAME DE LA PAIX,
+     INSTITUTE FOR MOLECULAR SCIENCE, IOWA STATE UNIVERSITY,
+     JACKSON STATE UNIVERSITY, JOHANNES KEPLER UNIVERSITY LINZ,
+     KYUSHU UNIVERSITY, MICHIGAN STATE UNIVERSITY,
+     MIE UNIVERSITY, MOSCOW STATE UNIVERSITY,
+     N. COPERNICUS UNIVERSITY, NAGOYA UNIVERSITY,
+     NANJING UNIVERSITY, NAT. INST. OF ADVANCED INDUSTRIAL
+     SCIENCE AND TECHNOLOGY, NATIONAL INST. OF STANDARDS AND
+     TECHNOLOGY, NESMEYANOV INSTITUTE OF ORGANOELEMENT COMPOUNDS
+     OF RUSSIAN ACADEMY OF SCIENCES, OSAKA PREFECTURE UNIVERSITY,
+     PENNSYLVANIA STATE UNIVERSITY, TOKYO INSTITUTE OF TECHNOLOGY,
+     UNIVERSITY OF AARHUS, UNIVERSITY OF ALBERTA,
+     UNIVERSITY OF CALIFORNIA AT SANTA BARBARA,
+     UNIVERSITY OF COPENHAGEN, UNIVERSITY OF IOWA,
+     UNIVERSITY OF MEMPHIS, UNIVERSITY OF MINNESOTA,
+     UNIVERSITY OF NEBRASKA, UNIVERSITY OF NEW ENGLAND,
+     UNIVERSITY OF NOTRE DAME, UNIVERSITY OF PISA,
+     UNIVERSITY OF SILESIA, UNIVERSITY OF TOKYO,
+     UNIVERSITY OF ZURICH, WASEDA UNIVERSITY, YALE UNIVERSITY
+
+  GAMESS SOFTWARE MANAGEMENT TEAM FOR THIS RELEASE:
+     MARK S. GORDON (TEAM LEAD),
+     BRETT BODE (SENIOR ADVISOR),
+     GIUSEPPE BARCA,
+     COLLEEN BERTONI,
+     KRISTOPHER KEIPERT (ADVISOR),
+     SAROM S. LEANG (DEVELOPMENT LEAD),
+     BUU PHAM,
+     JORGE LUIS GALVEZ VALLEJO (WEBSITE ADMINISTRATOR),
+     PENG XU
+
+ EXECUTION OF GAMESS BEGUN 10:19:27 26-MAY-2021    
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD>!  Methane with REVM11/6-31G(d)                                                 
+ INPUT CARD> $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 $END                                       
+ INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=ENERGY DFTTYP=REVM11 $END                            
+ INPUT CARD>                                                                                
+ INPUT CARD> $DATA                                                                          
+ INPUT CARD>Title                                                                           
+ INPUT CARD>C1                                                                              
+ INPUT CARD>C     6.0    -5.29801     1.38743     0.00000                                   
+ INPUT CARD>H     1.0    -4.22801     1.38743     0.00000                                   
+ INPUT CARD>H     1.0    -5.65468     2.34391     0.32068                                   
+ INPUT CARD>H     1.0    -5.65468     0.63147     0.66800                                   
+ INPUT CARD>H     1.0    -5.65468     1.18690    -0.98867                                   
+ INPUT CARD> $END                                                                           
+    1000000 WORDS OF MEMORY AVAILABLE
+
+     BASIS OPTIONS
+     -------------
+     GBASIS=N31          IGAUSS=       6      POLAR=POPN31  
+     NDFUNC=       1     NFFUNC=       0     DIFFSP=       F
+     NPFUNC=       0      DIFFS=       F     BASNAM=        
+
+
+     RUN TITLE
+     ---------
+ Title                                                                           
+
+ THE POINT GROUP OF THE MOLECULE IS C1      
+ THE ORDER OF THE PRINCIPAL AXIS IS     0
+
+ ATOM      ATOMIC                      COORDINATES (BOHR)
+           CHARGE         X                   Y                   Z
+ C           6.0   -10.0117871802        2.6218625271        0.0000000000
+ H           1.0    -7.9897803733        2.6218625271        0.0000000000
+ H           1.0   -10.6857957483        4.4293476399        0.6059973297
+ H           1.0   -10.6857957483        1.1933052695        1.2623369598
+ H           1.0   -10.6857957483        2.2429157748       -1.8683153923
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 C          2 H          3 H          4 H          5 H     
+
+   1 C       0.0000000    1.0700000 *  1.0700015 *  1.0700061 *  1.0699973 *
+   2 H       1.0700000 *  0.0000000    1.7473056 *  1.7473084 *  1.7473030 *
+   3 H       1.0700015 *  1.7473056 *  0.0000000    1.7473071 *  1.7473035 *
+   4 H       1.0700061 *  1.7473084 *  1.7473071 *  0.0000000    1.7473002 *
+   5 H       1.0699973 *  1.7473030 *  1.7473035 *  1.7473002 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+     ATOMIC BASIS SET
+     ----------------
+ THE CONTRACTED PRIMITIVE FUNCTIONS HAVE BEEN UNNORMALIZED
+ THE CONTRACTED BASIS FUNCTIONS ARE NOW NORMALIZED TO UNITY
+
+  SHELL TYPE  PRIMITIVE        EXPONENT          CONTRACTION COEFFICIENT(S)
+
+ C         
+
+      1   S       1          3047.5248800    0.001834737132
+      1   S       2           457.3695180    0.014037322813
+      1   S       3           103.9486850    0.068842622264
+      1   S       4            29.2101553    0.232184443216
+      1   S       5             9.2866630    0.467941348435
+      1   S       6             3.1639270    0.362311985337
+
+      2   L       7             7.8682723   -0.119332419775    0.068999066591
+      2   L       8             1.8812885   -0.160854151696    0.316423960957
+      2   L       9             0.5442493    1.143456437840    0.744308290898
+
+      3   L      10             0.1687145    1.000000000000    1.000000000000
+
+      4   D      11             0.8000000    1.000000000000
+
+ H         
+
+      5   S      12            18.7311370    0.033494604338
+      5   S      13             2.8253944    0.234726953484
+      5   S      14             0.6401217    0.813757326146
+
+      6   S      15             0.1612778    1.000000000000
+
+ H         
+
+      7   S      16            18.7311370    0.033494604338
+      7   S      17             2.8253944    0.234726953484
+      7   S      18             0.6401217    0.813757326146
+
+      8   S      19             0.1612778    1.000000000000
+
+ H         
+
+      9   S      20            18.7311370    0.033494604338
+      9   S      21             2.8253944    0.234726953484
+      9   S      22             0.6401217    0.813757326146
+
+     10   S      23             0.1612778    1.000000000000
+
+ H         
+
+     11   S      24            18.7311370    0.033494604338
+     11   S      25             2.8253944    0.234726953484
+     11   S      26             0.6401217    0.813757326146
+
+     12   S      27             0.1612778    1.000000000000
+
+ TOTAL NUMBER OF BASIS SET SHELLS             =   12
+ NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS =   23
+ NUMBER OF ELECTRONS                          =   10
+ CHARGE OF MOLECULE                           =    0
+ SPIN MULTIPLICITY                            =    1
+ NUMBER OF OCCUPIED ORBITALS (ALPHA)          =    5
+ NUMBER OF OCCUPIED ORBITALS (BETA )          =    5
+ TOTAL NUMBER OF ATOMS                        =    5
+ THE NUCLEAR REPULSION ENERGY IS       13.6865036394
+
+     $NEO OPTIONS
+     ------------
+     NUNIQN=       0     BASNUC=DZSNB        NEOSCF=NONE    
+     NEOCI =NONE         NUMULT=       2     NUCST =       1
+     NAUXNB=       0     VNUCEX=       F     NUCOPT=       F
+     NTAUXB=       0     NEOHSS=       F     HSSINI=READH   
+     HSSUPD=POWELLUP     DIRNUC=       F     SYMNUC=       F
+     QMTOLN= 0.0E+00     USRDEX=       F
+     POSNEO=       F     POSPRP=       F
+     NEONCI=       F     LOCORB=       0
+     NEODFT=NONE    
+
+ SELECTED MURRAY-HANDY-LAMING RADIAL GRID
+
+ LEGACY BECKE'S FUZZY CELL METHOD
+
+ SELECTED ORIGINAL BECKE'S PARTITION FUNCTION
+
+     LEBEDEV GRID-BASED DFT OPTIONS
+     ------------------------------
+     DFTTYP=REVM11  
+     NRAD  =      99     NLEB  =     590
+     NRAD0 =      24     NLEB0 =     110
+     SWOFF =    5.00E-03 (PURE SCF -> DFT)
+     SWITCH=    3.00E-04 (COARSE -> TIGHT GRID)
+     THRESH=    0.00E+00 GTHRE=    1.00E+00
+
+     LC/CAM PARAMETERS
+     -----------------
+     ALPHAC =.22500  BETAC =.77500  CAMMU = 0.400  CAMVWN =  0.00  CAMLYP =  0.00
+
+ GRIMME'S EMPIRICAL DISPERSION CORRECTION= F
+
+     $CONTRL OPTIONS
+     ---------------
+ SCFTYP=RHF          RUNTYP=ENERGY       EXETYP=RUN     
+ MPLEVL=       0     CITYP =NONE         CCTYP =NONE         VBTYP =NONE    
+ DFTTYP=REVM11       TDDFT =NONE    
+ MULT  =       1     ICHARG=       0     NZVAR =       0     COORD =UNIQUE  
+ PP    =NONE         RELWFN=NONE         LOCAL =NONE         NUMGRD=       F
+ ISPHER=      -1     NOSYM =       0     MAXIT =      30     UNITS =ANGS    
+ PLTORB=       F     MOLPLT=       F     AIMPAC=       F     FRIEND=        
+ NPRINT=       7     IREST =       0     GEOM  =INPUT   
+ NORMF =       0     NORMP =       0     ITOL  =      20     ICUT  =       9
+ INTTYP=BEST         GRDTYP=BEST         QMTTOL= 1.0E-06
+
+     $SYSTEM OPTIONS
+     ---------------
+  REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
+ DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
+ MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
+ TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
+ PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
+
+ Using Gaussians for PCM contribution to MEP, params: 0.10000E+01 0.10000E-07
+
+          ----------------
+          PROPERTIES INPUT
+          ----------------
+
+     MOMENTS            FIELD           POTENTIAL          DENSITY
+ IEMOM =       1   IEFLD =       0   IEPOT =       0   IEDEN =       0
+ WHERE =COMASS     WHERE =NUCLEI     WHERE =NUCLEI     WHERE =NUCLEI  
+ OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH    
+ IEMINT=       0   IEFINT=       0                     IEDINT=       0
+                                                       MORB  =       0
+          EXTRAPOLATION IN EFFECT
+          DIIS IN EFFECT
+ ORBITAL PRINTING OPTION: NPREO=     1    23     2     1
+
+     -------------------------------
+     INTEGRAL TRANSFORMATION OPTIONS
+     -------------------------------
+     NWORD  =            0
+     CUTOFF = 1.0E-09     MPTRAN =       0
+     DIRTRF =       F     AOINTS =DUP     
+
+          --------------
+          OPENMP OPTIONS
+          --------------
+ INTOMP  =       1
+ SHFOCK  =       F
+
+ *** WARNING ***
+ THREADED 2-ELECTRON INTEGRAL CODE ONLY WORKS WITH DIRECT SCF
+ INTOMP OPTION WAS IGNORED
+
+ 2E INTS ALGORITHM: MPI(IJ), NO OPENMP
+
+          ----------------------
+          INTEGRAL INPUT OPTIONS
+          ----------------------
+ NOPK  =       1 NORDER=       0 SCHWRZ=       F
+
+     ------------------------------------------
+     THE POINT GROUP IS C1 , NAXIS= 0, ORDER= 1
+     ------------------------------------------
+
+     DIMENSIONS OF THE SYMMETRY SUBSPACES ARE
+ A   =   23
+
+ ..... DONE SETTING UP THE RUN .....
+ STEP CPU TIME =     0.03 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    57.87%
+
+          ********************
+          1 ELECTRON INTEGRALS
+          ********************
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    57.87%
+
+          -------------
+          GUESS OPTIONS
+          -------------
+          GUESS =HUCKEL            NORB  =       0          NORDER=       0
+          MIX   =       F          PRTMO =       F          PUNMO =       F
+          TOLZ  = 1.0E-08          TOLE  = 1.0E-05
+          SYMDEN=       F          PURIFY=       F
+
+ INITIAL GUESS ORBITALS GENERATED BY HUCKEL   ROUTINE.
+ HUCKEL GUESS REQUIRES      7748 WORDS.
+
+ SYMMETRIES FOR INITIAL GUESS ORBITALS FOLLOW.   BOTH SET(S).
+     5 ORBITALS ARE OCCUPIED (    1 CORE ORBITALS).
+     2=A        3=A        4=A        5=A        6=A        7=A        8=A   
+     9=A       10=A       11=A       12=A       13=A       14=A       15=A   
+ ...... END OF INITIAL ORBITAL SELECTION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    57.87%
+
+                    ----------------------
+                    AO INTEGRAL TECHNOLOGY
+                    ----------------------
+     S,P,L SHELL ROTATED AXIS INTEGRALS, REPROGRAMMED BY
+        KAZUYA ISHIMURA (IMS) AND JOSE SIERRA (SYNSTAR).
+     S,P,D,L SHELL ROTATED AXIS INTEGRALS PROGRAMMED BY
+        KAZUYA ISHIMURA (INSTITUTE FOR MOLECULAR SCIENCE).
+     S,P,D,F,G SHELL TO TOTAL QUARTET ANGULAR MOMENTUM SUM 5,
+        ERIC PROGRAM BY GRAHAM FLETCHER (ELORET AND NASA ADVANCED
+        SUPERCOMPUTING DIVISION, AMES RESEARCH CENTER).
+     S,P,D,F,G,L SHELL GENERAL RYS QUADRATURE PROGRAMMED BY
+        MICHEL DUPUIS (PACIFIC NORTHWEST NATIONAL LABORATORY).
+
+          --------------------------------
+          2 ELECTRON LC EXCHANGE INTEGRALS
+          --------------------------------
+
+ THE -PK- OPTION IS OFF, THE INTEGRALS ARE NOT IN SUPERMATRIX FORM.
+ STORING   15000 INTEGRALS/RECORD ON DISK, USING 12 BYTES/INTEGRAL.
+ TWO ELECTRON INTEGRAL EVALUATION REQUIRES   90474 WORDS OF MEMORY.
+ II,JST,KST,LST =  1  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  2  1  1  1 NREC =         1 INTLOC =    2
+ II,JST,KST,LST =  3  1  1  1 NREC =         1 INTLOC =   34
+ II,JST,KST,LST =  4  1  1  1 NREC =         1 INTLOC =  214
+ II,JST,KST,LST =  5  1  1  1 NREC =         1 INTLOC = 1189
+ II,JST,KST,LST =  6  1  1  1 NREC =         1 INTLOC = 1867
+ II,JST,KST,LST =  7  1  1  1 NREC =         1 INTLOC = 2713
+ II,JST,KST,LST =  8  1  1  1 NREC =         1 INTLOC = 5638
+ II,JST,KST,LST =  9  1  1  1 NREC =         1 INTLOC = 9077
+ II,JST,KST,LST = 10  1  1  1 NREC =         1 INTLOC =13087
+ II,JST,KST,LST = 11  1  1  1 NREC =         2 INTLOC = 2728
+ II,JST,KST,LST = 12  1  1  1 NREC =         2 INTLOC = 8063
+ TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =               29151
+          2 INTEGRAL RECORDS WERE STORED ON DISK FILE 21.
+  ...... END OF TWO-ELECTRON INTEGRALS .....
+ STEP CPU TIME =     0.03 TOTAL CPU TIME =          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    73.53%
+
+          --------------------
+          2 ELECTRON INTEGRALS
+          --------------------
+
+ THE -PK- OPTION IS OFF, THE INTEGRALS ARE NOT IN SUPERMATRIX FORM.
+ STORING   15000 INTEGRALS/RECORD ON DISK, USING 12 BYTES/INTEGRAL.
+ TWO ELECTRON INTEGRAL EVALUATION REQUIRES   90474 WORDS OF MEMORY.
+ II,JST,KST,LST =  1  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  2  1  1  1 NREC =         1 INTLOC =    2
+ II,JST,KST,LST =  3  1  1  1 NREC =         1 INTLOC =   34
+ II,JST,KST,LST =  4  1  1  1 NREC =         1 INTLOC =  214
+ II,JST,KST,LST =  5  1  1  1 NREC =         1 INTLOC = 1189
+ II,JST,KST,LST =  6  1  1  1 NREC =         1 INTLOC = 1867
+ II,JST,KST,LST =  7  1  1  1 NREC =         1 INTLOC = 2713
+ II,JST,KST,LST =  8  1  1  1 NREC =         1 INTLOC = 5638
+ II,JST,KST,LST =  9  1  1  1 NREC =         1 INTLOC = 9077
+ II,JST,KST,LST = 10  1  1  1 NREC =         1 INTLOC =13087
+ II,JST,KST,LST = 11  1  1  1 NREC =         2 INTLOC = 2728
+ II,JST,KST,LST = 12  1  1  1 NREC =         2 INTLOC = 8063
+ TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =               29157
+          2 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
+  ...... END OF TWO-ELECTRON INTEGRALS .....
+ STEP CPU TIME =     0.02 TOTAL CPU TIME =          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    73.01%
+
+          --------------------------
+            R-REVM11 SCF CALCULATION
+          --------------------------
+
+     NUCLEAR ENERGY =        13.6865036394
+     MAXIT =   30     NPUNCH=    2
+     EXTRAP=T  DAMP=F  SHIFT=F  RSTRCT=F  DIIS=T  DEM=F  SOSCF=F
+         DENSITY MATRIX CONVERGENCE THRESHOLD=  1.00E-05
+     COARSE -> FINE DFT GRID SWITCH THRESHOLD=  3.00E-04 (SWITCH IN $DFT)
+                   HF -> DFT SWITCH THRESHOLD=  5.00E-03 (SWOFF IN $DFT)
+     MEMORY REQUIRED FOR RHF ITERS=    384023 WORDS.
+
+ DFT CODE IS SWITCHING FROM THE FINE GRID NRAD= 99,  NLEB=  590
+                      TO THE COARSE GRID NRAD0= 24, NLEB0=  110
+
+     EXCHANGE FUNCTIONAL   =revM11    
+     CORRELATION FUNCTIONAL=revM11    
+     DFT THRESHOLD         =.141E-07
+     GRID CHANGE THRESHOLD =.300E-03
+ FOR AN EULER-MACLAURIN QUADRATURE USING  99 RADIAL POINTS:
+ SMALLEST GAUSSIAN PRIMITIVE EXPONENT=        0.1612777588 OF TYPE -S-
+ ON ATOM NUMBER   2 HAS RADIAL NORMALIZATION=  1.000000
+  LARGEST GAUSSIAN PRIMITIVE EXPONENT=     3047.5248800000 OF TYPE -S-
+ ON ATOM NUMBER   1 HAS RADIAL NORMALIZATION=  1.000000
+ DFT IS SWITCHED OFF, PERFORMING PURE SCF UNTIL SWOFF THRESHOLD IS REACHED.
+
+ ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR
+          * * *   INITIATING DIIS PROCEDURE   * * *
+   1  0  0      -40.1092667568   -40.1092667568   0.121000003   0.497139554
+   2  1  0      -40.1900193011    -0.0807525442   0.044884906   0.053400088
+   3  2  0      -40.1939994927    -0.0039801916   0.015371731   0.025395324
+   4  3  0      -40.1946091977    -0.0006097050   0.004321875   0.004622618
+ CONVERGED TO SWOFF, SO DFT CALCULATION IS NOW SWITCHED ON.
+          * * *   INITIATING DIIS PROCEDURE   * * *
+   5  4  0      -40.4775098685    -0.2829006708   0.048509597   0.175638802
+   6  5  0      -40.4824370492    -0.0049271807   0.015465584   0.019412662
+   7  6  0      -40.4826442289    -0.0002071797   0.005614328   0.009233907
+   8  7  0      -40.4827427504    -0.0000985215   0.001103987   0.001454265
+   9  8  0      -40.4827442419    -0.0000014915   0.000137674   0.000137178
+ DFT CODE IS SWITCHING BACK TO THE FINE GRID
+          * * *   INITIATING DIIS PROCEDURE   * * *
+  10  9  0      -40.4821168134     0.0006274285   0.001025975   0.003380736
+  11 10  0      -40.4821208115    -0.0000039981   0.000432362   0.000443870
+  12 11  0      -40.4821208714    -0.0000000599   0.000173249   0.000312529
+  13 12  0      -40.4821210536    -0.0000001822   0.000025805   0.000021972
+  14 13  0      -40.4821210555    -0.0000000019   0.000004379   0.000002616
+  15 14  0      -40.4821210556    -0.0000000001   0.000000324   0.000000303
+
+          -----------------
+          DENSITY CONVERGED
+          -----------------
+     TIME TO FORM FOCK OPERATORS=       5.0 SECONDS (       0.3 SEC/ITER)
+     TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
+
+ FINAL R-REVM11 ENERGY IS      -40.4821210556 AFTER  15 ITERATIONS
+ DFT EXCHANGE + CORRELATION ENERGY =        -3.8914160944
+ TOTAL ELECTRON NUMBER             =         9.9999976584
+ TOTAL KINETIC ENERGY DENSITY      =        40.0788463064
+
+          ------------
+          EIGENVECTORS
+          ------------
+
+                      1          2          3          4          5
+                  -10.2279    -0.8438    -0.5189    -0.5189    -0.5189
+                     A          A          A          A          A   
+    1  C  1  S    0.991548  -0.198878   0.000002  -0.000000  -0.000000
+    2  C  1  S    0.059304   0.364578  -0.000008   0.000004  -0.000000
+    3  C  1  X   -0.000000   0.000000   0.454672  -0.020092  -0.003385
+    4  C  1  Y   -0.000000  -0.000002   0.006158   0.063423   0.450583
+    5  C  1  Z   -0.000000  -0.000002   0.019421   0.450195  -0.063632
+    6  C  1  S   -0.015717   0.357378  -0.000005  -0.000011   0.000001
+    7  C  1  X    0.000000   0.000009   0.212118  -0.009372  -0.001578
+    8  C  1  Y    0.000000   0.000002   0.002870   0.029596   0.210267
+    9  C  1  Z    0.000000  -0.000001   0.009061   0.210075  -0.029696
+   10  C  1 XX   -0.012999  -0.002101   0.025321  -0.001118  -0.000188
+   11  C  1 YY   -0.012999  -0.002102  -0.011890   0.016600   0.008050
+   12  C  1 ZZ   -0.012999  -0.002102  -0.013426  -0.015480  -0.007861
+   13  C  1 XY   -0.000000   0.000000  -0.000198  -0.002039  -0.014487
+   14  C  1 XZ    0.000000   0.000000  -0.000625  -0.014472   0.002045
+   15  C  1 YZ    0.000000   0.000000  -0.000268  -0.009185   0.018542
+   16  H  2  S    0.000060   0.137891   0.292441  -0.012922  -0.002177
+   17  H  2  S    0.002928   0.043394   0.240264  -0.010616  -0.001789
+   18  H  3  S    0.000059   0.137886  -0.090196   0.127573   0.247569
+   19  H  3  S    0.002928   0.043399  -0.074099   0.104816   0.203406
+   20  H  4  S    0.000059   0.137886  -0.092479   0.156278  -0.229617
+   21  H  4  S    0.002928   0.043403  -0.075979   0.128401  -0.188655
+   22  H  5  S    0.000059   0.137890  -0.109767  -0.270925  -0.015775
+   23  H  5  S    0.002928   0.043402  -0.090181  -0.222583  -0.012962
+
+                      6          7          8          9         10
+                    0.2219     0.2814     0.2814     0.2815     0.6241
+                     A          A          A          A          A   
+    1  C  1  S   -0.164835  -0.000012  -0.000004  -0.000002  -0.000001
+    2  C  1  S    0.153508   0.000035   0.000009   0.000010   0.000002
+    3  C  1  X    0.000022  -0.341280  -0.007788  -0.004698  -0.759428
+    4  C  1  Y    0.000002   0.005379  -0.030881  -0.339928   0.005590
+    5  C  1  Z   -0.000002  -0.007326   0.339890  -0.030994  -0.015859
+    6  C  1  S    2.851014   0.000157   0.000039   0.000020   0.000010
+    7  C  1  X    0.000127  -1.446459  -0.033001  -0.019892   1.468083
+    8  C  1  Y    0.000035   0.022812  -0.130907  -1.440932  -0.010800
+    9  C  1  Z   -0.000044  -0.031077   1.440709  -0.131390   0.030658
+   10  C  1 XX   -0.023154   0.025955   0.000593   0.000359  -0.089501
+   11  C  1 YY   -0.023153  -0.012811  -0.014439   0.011528   0.043911
+   12  C  1 ZZ   -0.023154  -0.013135   0.013849  -0.011879   0.045566
+   13  C  1 XY    0.000000   0.000237  -0.001357  -0.014939  -0.000380
+   14  C  1 XZ   -0.000001  -0.000322   0.014941  -0.001363   0.001080
+   15  C  1 YZ   -0.000000  -0.000533   0.013504   0.016330   0.001306
+   16  H  2  S    0.007372   0.092785   0.002117   0.001276  -0.487642
+   17  H  2  S   -1.056525   2.007406   0.045785   0.027599  -0.244749
+   18  H  3  S    0.007380  -0.031643  -0.020893   0.084706   0.162705
+   19  H  3  S   -1.056320  -0.684598  -0.452121   1.832998   0.081656
+   20  H  4  S    0.007389  -0.028651  -0.064326  -0.060457   0.153648
+   21  H  4  S   -1.056232  -0.619937  -1.391884  -1.308180   0.077132
+   22  H  5  S    0.007387  -0.032494   0.083106  -0.025529   0.171284
+   23  H  5  S   -1.056353  -0.703147   1.798137  -0.552466   0.085971
+
+                     11         12         13         14         15
+                    0.6241     0.6242     1.0318     1.0319     1.0319
+                     A          A          A          A          A   
+    1  C  1  S    0.000001   0.000000  -0.000003   0.000005  -0.000001
+    2  C  1  S   -0.000000  -0.000002  -0.000156   0.000002  -0.000064
+    3  C  1  X    0.015496  -0.006540   0.867214  -0.022512  -0.011140
+    4  C  1  Y   -0.046051  -0.758088   0.012038   0.034805   0.866935
+    5  C  1  Z   -0.757969   0.045929  -0.022042  -0.866697   0.035103
+    6  C  1  S   -0.000017   0.000003   0.000369  -0.000051   0.000152
+    7  C  1  X   -0.029953   0.012651  -1.200514   0.031159   0.015422
+    8  C  1  Y    0.089031   1.465437  -0.016667  -0.048182  -1.200134
+    9  C  1  Z    1.465222  -0.088775   0.030513   1.199815  -0.048601
+   10  C  1 XX    0.001827  -0.000775  -0.243154   0.006317   0.003121
+   11  C  1 YY   -0.055214  -0.032161   0.123835   0.134722  -0.104383
+   12  C  1 ZZ    0.053392   0.032923   0.119317  -0.141025   0.101261
+   13  C  1 XY    0.003136   0.051618   0.001947   0.005631   0.140282
+   14  C  1 XZ    0.051606  -0.003126  -0.003568  -0.140250   0.005682
+   15  C  1 YZ    0.037556  -0.062715  -0.005123  -0.118641  -0.159195
+   16  H  2  S    0.009950  -0.004202  -0.871274   0.022638   0.011184
+   17  H  2  S    0.005000  -0.002112   1.667521  -0.043282  -0.021449
+   18  H  3  S   -0.175676  -0.425086   0.286246   0.222145  -0.792689
+   19  H  3  S   -0.088056  -0.212984  -0.547956  -0.425178   1.517304
+   20  H  4  S   -0.286365   0.363884   0.312784   0.560682   0.589456
+   21  H  4  S   -0.143535   0.182321  -0.598754  -1.073188  -1.128350
+   22  H  5  S    0.452106   0.065405   0.272220  -0.805373   0.192030
+   23  H  5  S    0.226598   0.032787  -0.521120   1.541644  -0.367626
+
+                     16         17         18         19         20
+                    1.1401     1.1996     1.7563     1.7563     2.4377
+                     A          A          A          A          A   
+    1  C  1  S    0.100804  -0.113730  -0.000000  -0.000000  -0.000002
+    2  C  1  S   -1.129301  -1.939153   0.000005  -0.000012   0.000033
+    3  C  1  X   -0.000025  -0.000050   0.000000  -0.000000   0.215544
+    4  C  1  Y   -0.000008  -0.000020   0.000002   0.000037   0.001392
+    5  C  1  Z    0.000029  -0.000018   0.000037   0.000006  -0.016212
+    6  C  1  S    1.675801   5.481191  -0.000004   0.000028  -0.000042
+    7  C  1  X    0.000024   0.000044   0.000000  -0.000001   0.409156
+    8  C  1  Y    0.000006   0.000017  -0.000001  -0.000048   0.002642
+    9  C  1  Z   -0.000040   0.000027  -0.000058  -0.000002  -0.030781
+   10  C  1 XX   -0.019150  -0.113827  -0.000000   0.000001   1.135087
+   11  C  1 YY   -0.019171  -0.113856   0.402815   0.296271  -0.614445
+   12  C  1 ZZ   -0.019166  -0.113869  -0.402818  -0.296270  -0.520662
+   13  C  1 XY   -0.000002  -0.000010  -0.027609   0.816003  -0.004233
+   14  C  1 XZ    0.000006  -0.000002   0.816004   0.027599   0.049301
+   15  C  1 YZ    0.000008   0.000003  -0.342092   0.465126   0.044324
+   16  H  2  S    0.615719  -0.377643  -0.000001  -0.000002  -0.884681
+   17  H  2  S   -0.620715  -1.010159   0.000001  -0.000005   0.122733
+   18  H  3  S    0.615695  -0.377687  -0.000014  -0.000054   0.309728
+   19  H  3  S   -0.620671  -1.010096   0.000025   0.000061  -0.042953
+   20  H  4  S    0.615674  -0.377720  -0.000032   0.000025   0.340475
+   21  H  4  S   -0.620637  -1.010045   0.000051  -0.000050  -0.047220
+   22  H  5  S    0.615712  -0.377724   0.000047   0.000016   0.234472
+   23  H  5  S   -0.620718  -1.010029  -0.000074  -0.000025  -0.032518
+
+                     21         22         23
+                    2.4377     2.4377     4.2209
+                     A          A          A   
+    1  C  1  S   -0.000000  -0.000001  -0.489383
+    2  C  1  S   -0.000010   0.000014   2.922193
+    3  C  1  X   -0.011019  -0.011980   0.000005
+    4  C  1  Y   -0.146013   0.159372   0.000002
+    5  C  1  Z   -0.159009  -0.145521  -0.000000
+    6  C  1  S    0.000028  -0.000001   2.514580
+    7  C  1  X   -0.020919  -0.022736  -0.000017
+    8  C  1  Y   -0.277185   0.302560  -0.000010
+    9  C  1  Z   -0.301848  -0.276259   0.000003
+   10  C  1 XX   -0.058022  -0.063077  -1.887006
+   11  C  1 YY   -0.766684  -0.080345  -1.886998
+   12  C  1 ZZ    0.824712   0.143414  -1.886998
+   13  C  1 XY    0.443974  -0.484609   0.000003
+   14  C  1 XZ    0.483479   0.442487  -0.000002
+   15  C  1 YZ   -0.131816   0.918955  -0.000003
+   16  H  2  S    0.045221   0.049158   0.146732
+   17  H  2  S   -0.006276  -0.006818  -0.515255
+   18  H  3  S    0.716223  -0.422137   0.146729
+   19  H  3  S   -0.099337   0.058546  -0.515263
+   20  H  4  S   -0.031043   0.818656   0.146722
+   21  H  4  S    0.004295  -0.113537  -0.515271
+   22  H  5  S   -0.730413  -0.445696   0.146729
+   23  H  5  S    0.101294   0.061816  -0.515270
+ ...... END OF RHF CALCULATION ......
+ STEP CPU TIME =     5.12 TOTAL CPU TIME =          5.2 (      0.1 MIN)
+ TOTAL WALL CLOCK TIME=          5.3 SECONDS, CPU UTILIZATION IS    98.56%
+
+     ---------------------------------------------------------------------
+     PROPERTIES FOR THE REVM11   DFT FUNCTIONAL (RHF  TYPE) DENSITY MATRIX
+     ---------------------------------------------------------------------
+
+          -----------------
+          ENERGY COMPONENTS
+          -----------------
+
+         WAVEFUNCTION NORMALIZATION =       1.0000000000
+
+                ONE ELECTRON ENERGY =     -80.2806062192
+                TWO ELECTRON ENERGY =      26.1119815243
+           NUCLEAR REPULSION ENERGY =      13.6865036394
+                                      ------------------
+                       TOTAL ENERGY =     -40.4821210556
+
+ ELECTRON-ELECTRON POTENTIAL ENERGY =      26.1119815243
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -120.3594551330
+   NUCLEUS-NUCLEUS POTENTIAL ENERGY =      13.6865036394
+                                      ------------------
+             TOTAL POTENTIAL ENERGY =     -80.5609699694
+               TOTAL KINETIC ENERGY =      40.0788489138
+                 VIRIAL RATIO (V/T) =       2.0100619692
+
+          ---------------------------------------
+          MULLIKEN AND LOWDIN POPULATION ANALYSES
+          ---------------------------------------
+
+     ATOMIC MULLIKEN POPULATION IN EACH MOLECULAR ORBITAL
+
+                      1          2          3          4          5
+
+                  2.000000   2.000000   2.000000   2.000000   2.000000
+
+    1             1.997572   1.296105   1.111999   1.111955   1.111926
+    2             0.000607   0.175970   0.664663   0.001298   0.000037
+    3             0.000607   0.175970   0.063227   0.126487   0.476340
+    4             0.000607   0.175975   0.066470   0.189815   0.409763
+    5             0.000607   0.175980   0.093642   0.570446   0.001934
+
+               ----- POPULATIONS IN EACH AO -----
+                             MULLIKEN      LOWDIN
+              1  C  1  S      1.98943     1.97963
+              2  C  1  S      0.64777     0.34804
+              3  C  1  X      0.73780     0.66348
+              4  C  1  Y      0.73767     0.66383
+              5  C  1  Z      0.73771     0.66372
+              6  C  1  S      0.67215     0.34976
+              7  C  1  X      0.36476     0.50067
+              8  C  1  Y      0.36481     0.50153
+              9  C  1  Z      0.36481     0.50127
+             10  C  1 XX      0.00107     0.14962
+             11  C  1 YY     -0.00050     0.14727
+             12  C  1 ZZ     -0.00050     0.14727
+             13  C  1 XY      0.00315     0.00564
+             14  C  1 XZ      0.00315     0.00563
+             15  C  1 YZ      0.00630     0.01131
+             16  H  2  S      0.52778     0.48750
+             17  H  2  S      0.31479     0.35426
+             18  H  3  S      0.52780     0.48597
+             19  H  3  S      0.31483     0.35415
+             20  H  4  S      0.52780     0.48486
+             21  H  4  S      0.31483     0.35406
+             22  H  5  S      0.52780     0.48635
+             23  H  5  S      0.31481     0.35417
+
+          ----- MULLIKEN ATOMIC OVERLAP POPULATIONS -----
+          (OFF-DIAGONAL ELEMENTS NEED TO BE MULTIPLIED BY 2)
+
+             1           2           3           4           5
+
+    1    5.0691167
+    2    0.3900980   0.5300240
+    3    0.3901122  -0.0258486   0.5300767
+    4    0.3901127  -0.0258488  -0.0258553   0.5300720
+    5    0.3901176  -0.0258501  -0.0258544  -0.0258516   0.5300474
+
+          TOTAL MULLIKEN AND LOWDIN ATOMIC POPULATIONS
+       ATOM         MULL.POP.    CHARGE          LOW.POP.     CHARGE
+    1 C             6.629557   -0.629557         6.638680   -0.638680
+    2 H             0.842574    0.157426         0.841759    0.158241
+    3 H             0.842630    0.157370         0.840126    0.159874
+    4 H             0.842629    0.157371         0.838912    0.161088
+    5 H             0.842609    0.157391         0.840523    0.159477
+
+          -------------------------------
+          BOND ORDER AND VALENCE ANALYSIS     BOND ORDER THRESHOLD=0.050
+          -------------------------------
+
+                   BOND                       BOND                       BOND
+  ATOM PAIR DIST  ORDER      ATOM PAIR DIST  ORDER      ATOM PAIR DIST  ORDER
+    1   2  1.070  0.969        1   3  1.070  0.969        1   4  1.070  0.969
+    1   5  1.070  0.969
+
+                       TOTAL       BONDED        FREE
+      ATOM            VALENCE     VALENCE     VALENCE
+    1 C                 3.877       3.877       0.000
+    2 H                 0.937       0.937       0.000
+    3 H                 0.937       0.937       0.000
+    4 H                 0.937       0.937      -0.000
+    5 H                 0.937       0.937       0.000
+
+          ---------------------
+          ELECTROSTATIC MOMENTS
+          ---------------------
+
+ POINT   1           X           Y           Z (BOHR)    CHARGE
+               -10.011788    2.621861    0.000001        0.00 (A.U.)
+         DX          DY          DZ         /D/  (DEBYE)
+     0.000176   -0.000047   -0.000068    0.000195
+ ...... END OF PROPERTY EVALUATION ......
+ STEP CPU TIME =     0.02 TOTAL CPU TIME =          5.2 (      0.1 MIN)
+ TOTAL WALL CLOCK TIME=          5.3 SECONDS, CPU UTILIZATION IS    98.67%
+                580000  WORDS OF DYNAMIC MEMORY USED
+ EXECUTION OF GAMESS TERMINATED NORMALLY 10:19:32 26-MAY-2021    
+
+          This is a threaded run. In some cases not all
+          threaded components in GAMESS will saturate the
+          total number of available threads on your system or
+          set by OMP_NUM_THREADS
+
+ DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
+
+ ----------------------------------------
+ CPU timing information for all processes
+ ========================================
+ 0: 5.171875 + 0.093750 = 5.265625
+ 1: 0.046875 + 0.015625 = 0.062500
+ ----------------------------------------
+           Disk usage (in bytes)
+ ========================================
+ ----------------------------------------
+            Local date and time
+ ========================================
+26-05-2021 - 10:19:34.47
