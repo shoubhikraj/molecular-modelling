@@ -17,3 +17,5 @@ Use ```python <path-to-py-file> <POV-ray-options>```
 The python script automatically intercepts the arguments and passes them onto POV-ray
 
 *Note:* The python script assumes that the POV-ray executable is in the PATH. If it's not then add it to the PATH. Otherwise, you can edit the script and add the full path of the executable (Usually this is named pvengine64.exe in Windows x64). In the script the executable path is determined by the variable ```POVpath``` (which is right at the beginning)
+
+The script detects the input file from the `+Ifile.pov` argument given by Avogadro. So, that argument cannot be given in any other format.
