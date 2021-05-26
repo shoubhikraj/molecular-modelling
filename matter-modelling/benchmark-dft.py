@@ -41,5 +41,4 @@ for functional in dft_list:
     print("Running input file:",new_file_name)
     command_string="rungms " + new_file_name + " 00 1 >" + out_file_name
     os.system(command_string)
-    
-    # This runs input files with gamess.00.exe with 1 processes
+    # This runs input files with gamess.00.exe with 1 processes (uses rungms)
