@@ -1,0 +1,13 @@
+!  Methane with B3LYP/6-31G(d)
+ $BASIS GBASIS=N31 NGAUSS=6 NDFUNC=1 $END
+ $CONTRL SCFTYP=RHF RUNTYP=ENERGY DFTTYP=B3LYP $END
+
+ $DATA 
+Title
+C1
+C     6.0    -5.29801     1.38743     0.00000
+H     1.0    -4.22801     1.38743     0.00000
+H     1.0    -5.65468     2.34391     0.32068
+H     1.0    -5.65468     0.63147     0.66800
+H     1.0    -5.65468     1.18690    -0.98867
+ $END
