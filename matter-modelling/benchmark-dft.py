@@ -6,6 +6,7 @@ dft_list = ["wB97X-D", "M06-2X", "MN15", "REVM11","TPSS"]
 
 # optionally, read this in from a text file where the functionals
 # are separated by space
+
 #with open("dft_list.txt", "r") as dft_file_hnd:
 #    dft_list=dft_file_hnd.read().replace("\n","").replace("\r","").split(" ")
 
