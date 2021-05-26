@@ -127,7 +127,7 @@
 [CmdletBinding(PositionalBinding=$false)]
 param (
   [string]$dbg = "false",
-  [string]$par = "serial",
+  [string]$par = "omp",
   [string]$useipo = "false",
   [string]$mkltype = "serial",
 #  [string]$usempi = "true",
