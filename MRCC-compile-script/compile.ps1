@@ -2,6 +2,8 @@
 # Tested on Windows 10 with Intel oneAPI C++ and Fortran compilers version 2021.1
 # (Also uses Intel MKL of the same version)
 # 
+# (Requires Visual Studio as a dependency of the oneAPI toolkit)
+# 
 # How to use script:
 # 
 # From powershell: .\compile.ps1 <options>
@@ -140,6 +142,22 @@ $usempi = "false"
 # Print help
 if ($help -eq $true) {
 
+echo "***** Compile script for MRCC (www.mrcc.hu/) software suite *****"
+echo " "
+echo "Requires the Intel Fortran and C++ compiler, and Intel MKL, and MS Visual Studio"
+echo "All of those can be obtained from the Intel oneAPI base toolkit (for MKL) and HPC toolkit"
+echo "(for Fortran and C++ compilers). The script must be run from the command line build"
+echo "environment which is provided by the Intel oneAPI toolkit (setvars.bat). On Windows 10"
+echo "in the search bar, typing 'Intel oneAPI command prompt ...' will usually bring up the option"
+echo "which can be clicked to start the command prompt build environment. Once the command prompt"
+echo "opens, run powershell from within by typing powershell and hitting enter. This is necessary"
+echo "because otherwise the environment variables would not be carried over to the powershell"
+echo " "
+echo "Before compiling please check if the following commands work: ifort, icl, xilink, link"
+echo "from the powershell prompt. If the commands are not recognized, then you have not setup"
+echo "the command line build environment correctly. Refer to the Intel oneAPI's documentations"
+echo "for more details on this."
+echo " "
 echo "A brief summary of command line options:"
 echo " "
 echo "More detailed information is inside the file. Open it with any text editor to read."
@@ -410,8 +428,10 @@ if (!(Test-Path .\counter.exe)) {$done = "false"}
 if ("$done" -eq "true") {
   echo "---------------------Compilation finished!----------------------"
   echo " "
-  echo "Don't forget to put the folder containing the executables on PATH !"
-  echo "The program also needs linux utilities: cp, mv, grep, sed, wc, cat, diff and rm"
+  echo "Don't forget to put the folder containing the MRCC executables on PATH !"
+  echo "The program also needs linux utilities: cp, mv, grep, sed, wc, cat, diff and rm."
+  echo "These can be obtained from Git-for-Windows, or GNUwin32 or UnixUtils."
+  echo "The linux utilities need to be on PATH as well."
   echo " "
 } else {
   echo "---------------------Compilation failed!!------------------------"
@@ -422,5 +442,7 @@ if ("$done" -eq "true") {
   echo "Also check whether all parts of the oneAPI toolkit or the"
   echo "parallel studio were installed properly. For compiling the"
   echo "Intel Fortran and C++ compiler and Intel MKL are required."
+  echo "Visual Studio is also required because Intel oneAPI does"
+  echo "not work without it."
 }
 exit
