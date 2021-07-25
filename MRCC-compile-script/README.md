@@ -5,6 +5,8 @@ To compile, you need to access the source code from www.mrcc.hu and change some 
 
 The command line options and instructions for running are in the script (open with notepad).
 
+The script **must** be run from the Intel x64 compiler command line environment. The script assumes that you are running a 64-bit system.
+
 To run the script on Windows—
 
 From Powershell: `.\compile.ps1 <options>`
