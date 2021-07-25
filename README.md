@@ -4,7 +4,7 @@ This folder contains some stuff to help with various things relating to molecula
 
 ### MRCC-compile-script
 
-A powershell script for compiling the program MRCC (https://mrcc.hu/) on Windows
+A powershell script for compiling the program MRCC (https://mrcc.hu/) on Windows. Uses Intel compilers.
 
 ### POV-ray-hbond
 
