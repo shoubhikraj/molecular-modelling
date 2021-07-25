@@ -85,5 +85,6 @@ ANO0 - ano0
 
 These are needed for RI-MP2 calculations. They have the same names as the main basis sets, but they are in the RIBAS.txt file.
 
+----
 
 If there are any problems, feel free to open an issue.
