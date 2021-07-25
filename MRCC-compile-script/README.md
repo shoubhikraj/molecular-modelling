@@ -22,3 +22,6 @@ If execution is disallowed, and bypassing of execution policy is also disallowed
 3) Then open powershell and type `Get-Content .\compile.ps1 | powershell -noprofile -`
 
 Run `.\compile.ps1 -help` for a brief overview of the compile options. Detailed information is present inside the compile script as comments, open it with a text editor to read them.
+
+
+If there are any problems, or any feature missing, feel free to open an issue.
