@@ -6,6 +6,11 @@
 # 
 # How to use script:
 # 
+# First open the Intel compiler command line environment (64-bit). This can be done from
+# the start menu or by running the setvars.bat/psxevars.bat script.
+# This will open a command prompt. To get powershell, just run powershell inside that
+# command prompt.
+# 
 # From powershell: .\compile.ps1 <options>
 # 
 # for example: .\compile.ps1 -dbg true -mkltype thread
