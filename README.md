@@ -16,4 +16,8 @@ A lot of basis sets in GAMESS format, most of which are not available in the ori
 
 ### matter-modelling
 
-Some extra code that I wrote on https://mattermodeling.stackexchange.com
+Some extra code that I wrote on https://mattermodeling.stackexchange.com.
+
+### psf-reader
+
+A C++ code stub that reads PSF (protein structure files).
