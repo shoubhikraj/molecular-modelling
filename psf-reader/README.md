@@ -1,0 +1,3 @@
+# PSF-reader
+
+This is a stub program that reads the psf files written by molecular dynamics softwares (NAMD, CHARMM, XPLOR) etc. The program itself does not output anything on its own, it is intended to be used as a part of other programs. The PSF reading function is encapsulated in the function `bool read_PSF(string infile_name)`. The function takes the name of the input PSF file as it's input and returns true or false depending on whether reading was successful or not. If you are using it in your own program, you have to modify it to obtain whatever information is required (perhaps by passing a new variable as reference or by pointer).
