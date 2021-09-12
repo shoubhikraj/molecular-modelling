@@ -31,10 +31,11 @@ bool read_PSF(string infile_name);
 
 int main() {
     bool done;
+    string infile_name = "testfile.psf";
     try {
-        done = read_PSF("testfile.psf");
+        done = read_PSF(infile_name);
     }
-    catch (const ifstream::failure& ifstr_fail) {
+    catch (const std::ifstream::failure& ifstr_fail) {
         perror(("Error while reading file "+infile_name+"\n").c_str());
         exit(1);
     }
