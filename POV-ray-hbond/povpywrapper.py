@@ -6,7 +6,7 @@ import math
 import re
 #
 #path to POVray
-POVpath='"pvengine64.exe"'
+POVpath='"pvengine64"'
 # If POVRay is not in path then use (for example)
 # POVPath='"C:/Program Files/POV-Ray/v3.7/bin/pvengine64.exe"' (replace with the path in your case)
 # the slashes must be front slashes like shown, otherwise the wrapper script won't run
