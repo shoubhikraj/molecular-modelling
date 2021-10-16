@@ -20,4 +20,6 @@ The python script automatically intercepts the arguments and passes them onto PO
 
 The script detects the input file from the `+Ifile.pov` argument given by Avogadro. So, that argument cannot be given in any other format.
 
+It is a simple script, so it should work on Linux and Mac as well. There  might be some minor modification required to deal with the path of the POV-ray executable.
+
 If there are any problems, feel free to open an issue.
