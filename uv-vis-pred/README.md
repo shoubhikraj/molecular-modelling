@@ -2,7 +2,8 @@ Sample training data for spectral prediction. Each molecule has 732 features. Cr
 
 To load the data, from python:
 
-```
+```python
+import numpy as np
 X_train = np.loadtxt('X_train.txt')
 y_train = np.loadtxt('y_train.txt')
 ```
