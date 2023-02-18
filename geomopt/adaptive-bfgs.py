@@ -1,3 +1,7 @@
+import os
+from typing import Tuple, Callable, Optional, Union
+import numpy as np
+
 class AdaptiveBFGSMinimiser:
     """
     Adaptive-step, line-search free BFGS minimiser. Based
